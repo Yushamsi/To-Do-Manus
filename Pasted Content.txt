@@ -1,0 +1,68 @@
+Build a basic full-stack to-do list application using:
+Backend: Python Flask
+Frontend: Nuxt.js (latest stable version with file-based routing and proper component structure)
+Goals:
+I want a clean, modern, beginner-friendly to-do list app with:
+Clear, understandable code (suitable for beginners)
+Proper project organization
+Realistic styling using Tailwind CSS
+Simple functionality without unnecessary complexity
+The code should be well-commented throughout, explaining what each section does — especially anything that might be confusing to a beginner.
+Backend Requirements (Flask):
+Use Python with Flask to build a basic REST API
+Set up the following endpoints:
+GET /todos – retrieve all to-do items
+POST /todos – add a new to-do item
+PUT /todos/<id> – mark an item as complete or update it
+DELETE /todos/<id> – delete a to-do item
+Use in-memory storage (like a Python list or dictionary) — no database
+Enable CORS so the frontend can communicate with the backend
+Add clear and consistent comments throughout the code
+Backend should be able to run locally using a simple command (e.g. python app.py)
+Frontend Requirements (Nuxt.js + Tailwind CSS):
+Use Nuxt 3 and the Composition API or <script setup> format
+Tailwind CSS should be used for modern, clean styling — no basic HTML/CSS
+Components should be used properly:
+A component for adding tasks (AddTodo.vue)
+A component for displaying each task (TodoItem.vue)
+Parent layout or page component (pages/index.vue)
+Functionality:
+Display list of to-do items
+Add new tasks
+Mark tasks as complete
+Delete tasks
+Use Axios or Fetch for API communication
+Style the app so it looks like a realistic minimal application, not a basic or barebones demo
+Include visual feedback where appropriate (e.g. disabled buttons during loading)
+Project Structure:
+All backend code should go in a backend/ folder
+All frontend code should go in a frontend/ folder
+Both should be runnable locally with clear instructions
+Example:
+cd backend && python app.py
+cd frontend && npm install && npm run dev
+Include README files in each folder or in the root with setup instructions
+Documentation and Logs:
+Planning Log (PLANNING.md)
+Create a markdown file at the root called PLANNING.md
+Every plan or task should be written here, in order:
+E.g. “Initial plan: Set up Flask app with basic routes”
+Followed by a short breakdown of steps taken or to be taken
+Add a new entry for each planning phase (e.g. frontend setup, component structure, styling)
+Change Log (CHANGES.md)
+Create another markdown file at the root called CHANGES.md
+Record all changes as they are made
+Each entry should include:
+A short summary of what changed
+The files or folders involved
+When the change was made
+Example:
+[Change #3] Added Tailwind CSS configuration to frontend
+- Updated: frontend/nuxt.config.ts
+- Added: frontend/tailwind.config.js
+Additional Notes:
+Do not use any database or authentication
+The entire app should run locally without needing Docker or deployment setup
+Use clear naming conventions for files, folders, components, and variables
+Prioritize simplicity, readability, and clean structure
+Comment everything clearly, especially logic and interactions between frontend and backend

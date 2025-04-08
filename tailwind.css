@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-light text-dark;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md font-medium transition-colors duration-200;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-primary/90;
+}
+
+.btn-danger {
+  @apply bg-danger text-white hover:bg-danger/90;
+}
+
+.input {
+  @apply px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+}
+
+.todo-item {
+  @apply p-4 border border-gray-200 rounded-md mb-2 flex items-center justify-between;
+}
+
+.todo-item.completed {
+  @apply bg-gray-50;
+}
+
+.todo-item.completed .todo-text {
+  @apply line-through text-gray-500;
+}
